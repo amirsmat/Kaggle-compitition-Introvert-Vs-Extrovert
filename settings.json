@@ -1,0 +1,4 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "github.copilot.chat.agent.thinkingTool": true
+}
