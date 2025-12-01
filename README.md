@@ -1,0 +1,13 @@
+Introverts vs Extroverts – Personality Prediction Project
+
+This project explores a Kaggle dataset designed to predict whether a person is an Introvert, Ambivert, or Extrovert based on their behavioral and lifestyle patterns. The entire workflow is developed inside a Jupyter Notebook, where I walk through data exploration, cleaning, feature engineering, and model building.
+
+The dataset includes 18,524 rows and several features such as time spent alone, stage fear, attendance at social events, frequency of going outside, how drained someone feels after socializing, size of their friend circle, and posting frequency on social media. The target variable represents the personality type. One of the first challenges in this project was dealing with a high number of missing values—more than nine thousand—which made data cleaning and imputation an important focus.
+
+In the notebook, I start by importing the data and examining its basic structure to understand the shape, distributions, and patterns within the features. From there, I experiment with different strategies for handling the missing values. The first strategy involves creating range-based labels for each numerical feature, categorizing values into Introvert, Ambivert, or Extrovert ranges based on how the data is distributed. These labels are later used to guide the filling of missing values. The second strategy uses machine-learning models to predict the missing values directly. I compare these approaches to see which performs better and also identify “risky rows,” which are rare or unusual patterns in the dataset that require separate attention.
+
+As the project continues, I develop new label-based features, explore multicollinearity among variables, and prepare the dataset for modeling. The modeling section focuses on predicting the personality type and evaluating how the different imputation and feature-engineering approaches affect overall performance. Throughout the notebook, I highlight important observations and discuss what seems to work best based on the structure of this specific dataset.
+
+The goal of this project is not only to build a personality classifier but also to practice handling real-world data issues such as missing values, feature design, and model evaluation. It serves as a hands-on exercise in developing a complete machine-learning workflow—from raw data to a functioning predictive model.
+
+Anyone who wants to explore the project can simply clone the repository, open the notebook, and run the code step by step. The environment relies on common Python libraries like Pandas, NumPy, Scikit-learn, and Matplotlib, making it easy to modify the modeling section or extend the project further.
